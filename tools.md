@@ -76,5 +76,7 @@ Once your repo includes the above linting packages and configuration, you can fu
   * VS Code
      * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
      * [Prettier+](https://marketplace.visualstudio.com/items?itemName=svipas.prettier-plus)
+  * WebStorm
+     * [Prettier format on Save](https://prettier.io/docs/en/webstorm.html)
 
 These editor plugins use the available configuration from within your project, but additional configuration may be needed to tune the experience to your preferences (such as linting or formatting on save, for example).
