@@ -25,7 +25,7 @@ MJRC uses the CSS styling framework, [Styled Components](https://styled-componen
 
 ## Styled Component Guidelines
 
-* Use a single, module scoped, feature-component-specific styled component to encapsulate all styling
+* Use a single, module-scoped, feature component-specific, styled component to encapsulate all styling
 
 > Why? This pattern creates fewer styled component abstractions which results in cleaner DOM and faster React VDOM diffing. It also makes it easier to identify which element maps to the component when looking in the rendered source code. Finally, it results in less code that is easier to reason able where a style is being applied.
 
@@ -71,6 +71,9 @@ export function MetricsTogglePanel() {
     );
 }
 ```
+* Name your module scoped styled component with the format `Styled<NameOfComponent>`
+
+> Why? This makes it very convenient to identify the original component markup within the rendered DOM. 
 
 * To style child elements within the feature-level styled component, create css classes with minimal additional specificity
 
