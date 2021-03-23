@@ -3,6 +3,7 @@ This repo contains many coding style guides for frontend developers. The intent 
 
 - [Javascript](javascript.md)
 - [React](react.md)
+- [Styling and CSS](styling.md)
 - [Tools](tools.md)
 - [Testing](testing.md)
 - [Peer Reviews](https://mailgun.atlassian.net/wiki/spaces/ENG/pages/1623457800/Best+Practices+Peer+Review)
