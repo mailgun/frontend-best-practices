@@ -7,3 +7,7 @@ This repo contains many coding style guides for frontend developers. The intent 
 - [Tools](tools.md)
 - [Testing](testing.md)
 - [Peer Reviews](https://mailgun.atlassian.net/wiki/spaces/ENG/pages/1623457800/Best+Practices+Peer+Review)
+
+# Articles
+
+- [21 Best Practices for a Clean React Project](https://betterprogramming.pub/21-best-practices-for-a-clean-react-project-df788a682fb)
