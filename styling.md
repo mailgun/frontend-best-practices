@@ -142,3 +142,10 @@ const Icon = styled.svg`
   }
 `;
 ```
+
+## Brainstorming / Workspace / Notes
+* Present a limited, concise set of styling principals and patterns to reduce unique generated classes/sytled components and acheive desired look in a clear, simple manner.
+* Atomic Design principles as applicable to Styling
+* Layout components (Div and Flex)
+* All components should support className
+* Helper/mixin classes for common cases: pointer, z-index
