@@ -1354,7 +1354,7 @@ The purpose of this guide, forked and tweaked from [Airbnb's guide](https://gith
   <a name="modules--no-default-export"></a>
   - [10.6](#modules--no-default-export) Even in modules with a single export, prefer named export over default export.
  eslint: [`import/no-default-export`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-named-export.md)
-    > Why? Unlike default imports which are always implicitly aliased, named imports must be explicitly aliased. This eliminates the possibility that an import is improperly named unintentionally or not updated when a module if renamed.
+    > Why? Unlike default imports which are always implicitly aliased, named imports must be explicitly aliased. This eliminates the possibility that an import is improperly named unintentionally or not updated when a module is renamed or refactored.
 
     ```javascript
     // bad
