@@ -504,34 +504,62 @@ This style guide is mostly based on the standards that are currently prevalent i
       />
     ))}
     ```
-
-  - Always define explicit defaultProps for all non-required props.
-
-    > Why? propTypes are a form of documentation, and providing defaultProps means the reader of your code doesn’t have to assume as much. In addition, it can mean that your code can omit certain type checks.
+    
+  - In functional components, define default values for props within the components params.
 
     ```jsx
     // bad
-    function SFC({ foo, bar, children }) {
+    function SFC({ foo, bar }) {
+      bar = bar || ''
       return <div>{foo}{bar}{children}</div>;
     }
     SFC.propTypes = {
       foo: PropTypes.number.isRequired,
       bar: PropTypes.string,
-      children: PropTypes.node,
     };
 
     // good
-    function SFC({ foo, bar, children }) {
-      return <div>{foo}{bar}{children}</div>;
+    function SFC({ foo, bar = '' }) {
+      return <div>{foo}{bar}</div>;
     }
     SFC.propTypes = {
       foo: PropTypes.number.isRequired,
       bar: PropTypes.string,
       children: PropTypes.node,
     };
+    ```
+
+  - When a Class component must be used, define explicit defaultProps for all non-required props.
+
+    > Why? propTypes are a form of documentation, and providing defaultProps means the reader of your code doesn’t have to assume as much. In addition, it can mean that your code can omit certain type checks. Also, defining defaultProps using the propery avoids some issues related to default vaules within the class component lifecycle.
+
+    ```jsx
+    // bad
+    Class SFC extends React.Component {
+      render() {
+        const { foo, bar = '' } = this.props
+        return <div>{foo}{bar}</div>;
+      }
+    }
+    SFC.propTypes = {
+      foo: PropTypes.number.isRequired,
+      bar: PropTypes.string,
+      children: PropTypes.node,
+    }
+
+    // good
+    Class SFC extends React.Component {
+      render() {
+        const { foo, bar = '' } = this.props
+        return <div>{foo}{bar}</div>;
+      }
+    }
+    SFC.propTypes = {
+      foo: PropTypes.number.isRequired,
+      bar: PropTypes.string,
+    };
     SFC.defaultProps = {
       bar: '',
-      children: null,
     };
     ```
 
