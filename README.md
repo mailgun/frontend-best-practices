@@ -12,3 +12,5 @@ This repo contains many coding style guides for frontend developers. The intent 
 
 - [21 Best Practices for a Clean React Project](https://betterprogramming.pub/21-best-practices-for-a-clean-react-project-df788a682fb)
 - [Comparing TypeScript and PropTypes in React applications](https://blog.logrocket.com/comparing-typescript-and-proptypes-in-react-applications)
+- [React Hooks: Compound Components](https://kentcdodds.com/blog/compound-components-with-react-hooks)
+- [Top three React & TypeScript pitfalls](https://dev.to/wojciechmatuszewski/top-three-react-typescript-pitfalls-50l8)
