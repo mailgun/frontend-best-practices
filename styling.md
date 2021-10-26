@@ -56,7 +56,7 @@ const StyledMetricsToggles = styled.div`
     display: flex;
     padding: 12px 32px;
     
-    label.MetricsToggles--label {
+    label.MetricsToggles-label {
       margin-right: 16px;
     }
 `;
@@ -87,12 +87,12 @@ const StyledLabel = styled.div`
 
 const StyledMetricsToggles = styled.div`
     // ok
-    .MetricsToggles--label {
+    .MetricsToggles-label {
       margin-right: 16px;
     }
     
     // best
-    label.MetricsToggles--label {
+    label.MetricsToggles-label {
       margin-right: 16px;
     }
 `;
@@ -115,7 +115,7 @@ const StyledMetricsToggles = styled.div`
     }
     
     // good
-    label.MetricsToggles--label {
+    label.MetricsToggles-label {
       margin-right: 16px;
     }
 `;
