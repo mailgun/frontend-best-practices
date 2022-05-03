@@ -150,4 +150,5 @@ const Icon = styled.svg`
 * Atomic Design principles as applicable to Styling
 * Layout components (Div and Flex)
 * All components should support className
+* [Transient props](https://styled-components.com/docs/api#transient-props) use cases and practices
 * Helper/mixin classes for common cases: pointer, z-index
